@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PrivOS - The Ultimate Virtual Workspace. Where, When & At Agents Go Remote">
+    <title>PrivOS - Virtual Workspace & AI Agents</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Floating Header Card -->
+    <div class="hero-header-card">
+        <div class="header-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12 20.25H16.25C17.3109 20.25 18.3283 19.8286 19.0784 19.0784C19.8286 18.3283 20.25 17.3109 20.25 16.25V12M12 20.25H7.75C6.68913 20.25 5.67172 19.8286 4.92157 19.0784C4.17143 18.3283 3.75 17.3109 3.75 16.25V12M12 20.25V3.75M20.25 12V7.75C20.25 6.68913 19.8286 5.67172 19.0784 4.92157C18.3283 4.17143 17.3109 3.75 16.25 3.75H12M20.25 12H3.75M3.75 12V7.75C3.75 6.68913 4.17143 5.67172 4.92157 4.92157C5.67172 4.17143 6.68913 3.75 7.75 3.75H12"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <img src="img/Privos Logo.svg" alt="PrivOS Logo" class="header-logo">
+        <a href="#request-demo" class="header-cta">Request a Demo <img src="img/arrow.svg" alt=""
+                class="btn-arrow-icon"></a>
+
+        <!-- Dropdown Menu -->
+        <div class="header-menu">
+            <a href="#" class="menu-item">
+                <div class="menu-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="19" x2="12" y2="5"></line>
+                        <polyline points="5 12 12 5 19 12"></polyline>
+                    </svg>
+                </div>
+                <span>Top of page</span>
+            </a>
+            <a href="#human-ai" class="menu-item">
+                <div class="menu-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 3L2 9L12 21L22 9L18 3H6Z"></path>
+                        <path d="M12 21L7.5 9H16.5L12 21Z"></path>
+                    </svg>
+                </div>
+                <span>Core Value</span>
+            </a>
+            <a href="#ecosystem" class="menu-item">
+                <div class="menu-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path
+                            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z">
+                        </path>
+                    </svg>
+                </div>
+                <span>How It Works</span>
+            </a>
+            <a href="#scale" class="menu-item">
+                <div class="menu-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+                <span>Audience Segmentation</span>
+            </a>
+            <a href="#security" class="menu-item">
+                <div class="menu-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                </div>
+                <span>Enterprise Security</span>
+            </a>
+        </div>
+    </div>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-container">
+            <!-- Floating Header Card Moved to Body -->
+
+
+            <div class="hero-content">
+                <h1 class="hero-title fade-in-up">
+                    The Intuitive Virtual Workspace<br>
+                    Where Teams & AI Agents Collaborate
+                </h1>
+                <p class="hero-subtitle fade-in-up delay-100">
+                    Transform your team’s productivity. PrivOS unifies human expertise and AI intelligence in a<br>
+                    single, secure environment—powered by the robustness of Google Cloud.
+                </p>
+                <div class="hero-buttons fade-in-up delay-200">
+                    <button class="btn-primary">Request a Demo <img src="img/arrow.svg" alt=""
+                            class="btn-arrow-icon"></button>
+                    <button class="btn-secondary">Explore the Marketplace <img src="img/arrow.svg" alt=""
+                            class="btn-arrow-icon"></button>
+                </div>
+            </div>
+
+            <!-- Dashboard Image -->
+            <div class="dashboard-preview-image fade-in-up delay-300">
+                <img src="img/dashboard.png" alt="PrivOS Dashboard Interface" class="hero-dashboard-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Human + AI Section -->
+    <section class="human-ai-section" id="human-ai">
+        <div class="container">
+            <div class="section-badge-text fade-in-up">Experience the Future of Work</div>
+            <h2 class="section-title fade-in-up delay-100">
+                HUMAN + AI
+            </h2>
+            <p class="section-description fade-in-up delay-200">
+                Stop toggling between disjointed tools. PrivOS is a complete Operating<br>
+                System for your organization where AI Agents are treated as full team<br>
+                members.
+            </p>
+            <div class="feature-grid-dark">
+                <!-- Card 1 -->
+                <!-- Card 1 -->
+                <div class="feature-card-dark fade-in-up delay-100">
+                    <div class="card-icon-wrapper">
+                        <img src="img/Intuitively Collaborative.svg" alt="Intuitively Collaborative"
+                            class="feature-icon-svg">
+                    </div>
+                    <div class="card-title-row">
+                        <div class="card-accent-bar"></div>
+                        <h3>Intuitively Collaborative</h3>
+                    </div>
+                    <p class="card-description-text">A workspace that feels as natural as your favorite chat apps, but
+                        powered by autonomous agents.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="feature-card-dark fade-in-up delay-200">
+                    <div class="card-icon-wrapper">
+                        <img src="img/Zero-Friction Deployment.svg" alt="Zero-Friction Deployment"
+                            class="feature-icon-svg">
+                    </div>
+                    <div class="card-title-row">
+                        <div class="card-accent-bar"></div>
+                        <h3>Zero-Friction Deployment</h3>
+                    </div>
+                    <p class="card-description-text">No complex installations or DevOps required. Sign up and start
+                        orchestrating your AI workforce immediately on our secure cloud.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="feature-card-dark fade-in-up delay-300">
+                    <div class="card-icon-wrapper">
+                        <img src="img/Limitless Scalability.svg" alt="Limitless Scalability" class="feature-icon-svg">
+                    </div>
+                    <div class="card-title-row">
+                        <div class="card-accent-bar"></div>
+                        <h3>Limitless Scalability</h3>
+                    </div>
+                    <p class="card-description-text">Access a global marketplace of specialized Agent Crews ready to be
+                        hired instantly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PrivOS Ecosystem -->
+    <section id="ecosystem" class="ecosystem-section">
+        <div class="ecosystem-bg-wrapper">
+            <img src="img/Ecosystem.png" alt="" class="ecosystem-bg-graphic">
+        </div>
+        <div class="container relative-z">
+            <div class="section-header-left">
+                <div class="section-subtitle-gold fade-in-up">How It Works</div>
+                <h2 class="section-title-large fade-in-up delay-100">The PrivOS<br>Ecosystem</h2>
+            </div>
+
+            <div class="ecosystem-grid-new">
+                <!-- Card 1: The Workspace -->
+                <div class="ecosystem-card-dark fade-in-up delay-100">
+                    <div class="card-label-gray">For Teams & Businesses</div>
+                    <h3 class="card-title-large">The Workspace</h3>
+                    <div class="card-subtitle-gray">Hire Your AI Workforce.</div>
+
+                    <p class="card-desc-text">
+                        Don't just use AI work with it. In the PrivOS Workspace, you can assign tasks to AI agents just
+                        like you would a human employee. From marketing research to data analysis, get extraordinary
+                        results in a fraction of the time.
+                    </p>
+
+                    <div class="card-highlight-box">
+                        <div class="highlight-header-row">
+                            <img src="img/Feature Highlight.svg" alt="Highlight" class="icon-small">
+                            <div class="highlight-title">Feature Highlight</div>
+                        </div>
+                        <p class="highlight-desc">Ready-to-use infrastructure. We handle the heavy lifting of GPU
+                            management and cloud security so you can focus on results.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: The Studio -->
+                <div class="ecosystem-card-dark fade-in-up delay-200">
+                    <div class="card-label-gray">For Consultants & Specialists</div>
+                    <h3 class="card-title-large">The Studio</h3>
+                    <div class="card-subtitle-gray">Build. Orchestrate. Monetize.</div>
+
+                    <p class="card-desc-text">
+                        PrivOS Studio is the command center for automation experts. Build sophisticated Agent Crews and
+                        automation strategies without worrying about the backend infrastructure.
+                    </p>
+
+                    <div class="card-highlight-box">
+                        <div class="highlight-header-row">
+                            <img src="img/Design complex workflows.svg" alt="Workflows" class="icon-small">
+                            <div class="highlight-title">Design complex workflows</div>
+                        </div>
+                        <p class="highlight-desc">Create multi-agent systems that handle intricate business
+                            logic.</p>
+                    </div>
+
+                    <div class="card-highlight-box">
+                        <div class="highlight-header-row">
+                            <img src="img/Package your expertise.svg" alt="Package" class="icon-small">
+                            <div class="highlight-title">Package your expertise</div>
+                        </div>
+                        <p class="highlight-desc">Turn your consulting methodologies into deployable AI assets
+                            available instantly to PrivOS users.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: The Marketplace -->
+                <div class="ecosystem-card-dark fade-in-up delay-300">
+                    <h3 class="card-title-large">The Marketplace</h3>
+                    <div class="card-subtitle-gray">Where Expertise Meets Execution.</div>
+
+                    <p class="card-desc-text">
+                        Consultants publish their high-performing Agent Crews to the PrivOS Marketplace. Businesses
+                        browse, select, and "subscribe" to these agents to deploy them immediately into their secure
+                        workspace.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scale & Productize Section -->
+    <section class="scale-section" id="scale">
+        <div class="container">
+            <div class="scale-grid">
+                <!-- Card 1: Scale Without Headcount -->
+                <div class="scale-card">
+                    <div class="role-badge fade-in-up delay-100">
+                        <img src="img/For Business Leaders.svg" alt="Business" class="role-icon">
+                        <span>For Business Leaders</span>
+                    </div>
+                    <h3 class="scale-title fade-in-up delay-100">Scale Without Headcount</h3>
+                    <p class="scale-desc fade-in-up delay-200">Access top-tier automation strategies built by industry
+                        experts without
+                        hiring a full engineering team.</p>
+
+                    <div class="features-label fade-in-up delay-200">Features you'll love</div>
+
+                    <div class="scale-features-row fade-in-up delay-300">
+                        <div class="scale-feature">
+                            <img src="img/Instant Cloud Access.svg" alt="Cloud" class="feature-icon-new">
+                            <span class="feature-name">Instant Cloud Access</span>
+                        </div>
+                        <div class="scale-feature">
+                            <img src="img/Enterprise-grade Security.svg" alt="Security" class="feature-icon-new">
+                            <span class="feature-name">Enterprise-grade Security</span>
+                        </div>
+                        <div class="scale-feature">
+                            <img src="img/Pre-built Agent Crews.svg" alt="Crews" class="feature-icon-new">
+                            <span class="feature-name">Pre-built Agent Crews</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="scale-link">Get Your Workspace <img src="img/arrow.svg" alt=""
+                            class="arrow btn-arrow-icon"></a>
+                </div>
+
+                <!-- Card 2: Productize Your Services -->
+                <div class="scale-card">
+                    <div class="role-badge fade-in-up delay-100">
+                        <img src="img/For Consultants & Agencies.svg" alt="Consultants" class="role-icon">
+                        <span>For Consultants & Agencies</span>
+                    </div>
+                    <h3 class="scale-title fade-in-up delay-100">Productize Your Services</h3>
+                    <p class="scale-desc fade-in-up delay-200">Stop trading time for money. Build an Agent Crew once in
+                        PrivOS Studio and
+                        license it to hundreds of clients via the Marketplace.</p>
+
+                    <div class="features-label fade-in-up delay-200">Features you'll love</div>
+
+                    <div class="scale-features-row fade-in-up delay-300">
+                        <div class="scale-feature">
+                            <img src="img/Low-code Agent Builder.svg" alt="Builder" class="feature-icon-new">
+                            <span class="feature-name">Low-code Agent Builder</span>
+                        </div>
+                        <div class="scale-feature">
+                            <img src="img/Zero Infrastructure Management.svg" alt="Infrastructure"
+                                class="feature-icon-new">
+                            <span class="feature-name">Zero Infrastructure Management</span>
+                        </div>
+                        <div class="scale-feature">
+                            <img src="img/Recurring Revenue Stream.svg" alt="Revenue" class="feature-icon-new">
+                            <span class="feature-name">Recurring Revenue Stream</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="scale-link">Start Building Agents <img src="img/arrow.svg" alt=""
+                            class="arrow btn-arrow-icon"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enterprise Security Section -->
+    <section class="security-section" id="security">
+        <div class="container">
+            <div class="security-grid">
+                <!-- Left Column -->
+                <div class="security-left">
+                    <h2 class="security-title">
+                        ENTERPRISE<br>SECURITY
+                    </h2>
+
+                    <div class="google-badge">
+                        <div class="google-logo-circles">
+                            <!-- CSS-only Google Logo approximation -->
+                            <img src="img/google cloud.png" alt="">
+                        </div>
+                        <div class="google-text">
+                            <span>Powered by</span>
+                            <strong>Google Cloud</strong>
+                        </div>
+                    </div>
+
+                    <p class="security-desc">
+                        We understand that allowing AI into your internal workflow requires absolute trust.
+                        PrivOS is built on top of Google Cloud's world-class infrastructure, ensuring your
+                        data
+                        remains yours.
+                    </p>
+                </div>
+
+                <!-- Right Column: Card Stack/Carousel -->
+                <div class="security-right-wrapper">
+                    <div class="carousel-nav">
+                        <button class="nav-arrow up">
+                            <!-- Arrow Up Icon -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="12" y1="19" x2="12" y2="5"></line>
+                                <polyline points="5 12 12 5 19 12"></polyline>
+                            </svg>
+                        </button>
+                        <button class="nav-arrow down">
+                            <!-- Arrow Down Icon -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <polyline points="19 12 12 19 5 12"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="security-card-stack">
+                        <!-- Background Cards for Effect -->
+                        <div class="stack-card bg-1"></div>
+                        <div class="stack-card bg-2"></div>
+
+                        <!-- Main Card -->
+                        <div class="stack-card main">
+                            <div class="stack-progress-wrapper">
+                                <div class="stack-progress-bar"></div>
+                            </div>
+                            <div class="stack-card-content">
+                                <div class="stack-accent-bar"></div>
+                                <div class="stack-text-group">
+                                    <h3 class="stack-card-title">Bank-Grade Security</h3>
+                                    <p class="stack-text">
+                                        Leveraging Google Cloud's advanced encryption standards for data at
+                                        rest
+                                        and in transit.
+                                    </p>
+                                </div>
+                                <div class="stack-visual">
+                                    <img src="img/Bank-Grade Security.png" alt="Security Shield" class="stack-img-glow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="usecases-section" id="usecases">
+        <div class="container">
+            <h2 class="usecases-title fade-in-up"><span>USE</span> <span>CASES</span></h2>
+
+            <div class="usecases-grid">
+                <!-- Card 1: The Marketing Agency -->
+                <div class="usecase-card fade-in-up delay-100">
+                    <div class="usecase-accent-bar"></div>
+                    <div class="usecase-image">
+                        <img src="img/The Marketing Agency.png" alt="The Marketing Agency">
+                    </div>
+                    <h3 class="usecase-card-title">The Marketing Agency</h3>
+                    <p class="usecase-card-desc">Subscribed to an "SEO Agent Crew" from the Marketplace to audit 50
+                        client sites overnight.</p>
+                </div>
+
+                <!-- Card 2: The Legal Firm -->
+                <div class="usecase-card fade-in-up delay-200">
+                    <div class="usecase-accent-bar"></div>
+                    <div class="usecase-image">
+                        <img src="img/The Legal Firm.png" alt="The Legal Firm">
+                    </div>
+                    <h3 class="usecase-card-title">The Legal Firm</h3>
+                    <p class="usecase-card-desc">Commissioned a specialist to build a "Case Research Agent" in PrivOS
+                        Studio to summarize depositions securely.</p>
+                </div>
+            </div>
+
+            <!-- Card 3: The Startup (Full Width) -->
+            <div class="usecase-card-wide fade-in-up delay-300">
+                <div class="usecase-accent-bar"></div>
+                <div class="usecase-wide-content">
+                    <div class="usecase-wide-text">
+                        <h3 class="usecase-card-title">The Startup</h3>
+                        <p class="usecase-card-desc wide-desc">Uses a hybrid team of 3 humans and 35 AI Agents to run
+                            customer
+                            support 24/7 without managing any servers.</p>
+                    </div>
+                    <div class="usecase-wide-image">
+                        <img src="img/The Startup.png" alt="The Startup">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="new-footer">
+        <div class="container">
+            <div class="footer-card">
+                <div class="footer-layout">
+                    <!-- Col 1: CTA -->
+                    <div class="footer-cta-col fade-in-up delay-100">
+                        <h3 class="footer-heading">Ready to Orchestrate Your<br>AI Workforce?</h3>
+                        <p class="footer-desc">
+                            Join the companies transforming their productivity with PrivOS. Whether you are
+                            looking for a secure workspace or to monetize your AI expertise, we have the platform for
+                            you.
+                        </p>
+                        <a href="#book-call" class="btn-primary">Book a Discovery Call <img src="img/arrow.svg" alt=""
+                                class="btn-arrow-icon"></a>
+                    </div>
+
+                    <!-- Col 2: Navigation -->
+                    <div class="footer-nav-col fade-in-up delay-200">
+                        <ul class="footer-menu">
+                            <li><a href="#" class="active-link">Home</a></li>
+                            <li><a href="#core-value">Core Value</a></li>
+                            <li><a href="#how-it-works">How It Works</a></li>
+                            <li><a href="#audience">Audience Segmentation</a></li>
+                            <li><a href="#security">Enterprise Security</a></li>
+                            <li><a href="#usecases">Use Cases</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Col 3: Brand -->
+                    <div class="footer-brand-col fade-in-up delay-300">
+                        <img src="img/Privos Logo.svg" alt="PrivOS" class="footer-logo-svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/carousel.js"></script>
+    <script src="js/glow.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/button-effect.js"></script>
+    <script src="js/scroll-animation.js"></script>
+</body>
+
+</html>
