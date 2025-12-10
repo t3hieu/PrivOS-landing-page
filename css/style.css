@@ -816,6 +816,7 @@ body {
 }
 
 /* Link with Arrow */
+/* Link with Arrow */
 .scale-link {
     color: var(--primary-50);
     text-decoration: none;
@@ -823,15 +824,45 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    height: 32px;
+    position: relative;
+    overflow: hidden;
+    padding-right: 4px;
+    padding-left: 30px;
+    /* Reserve space for incoming left arrow */
+    transition: color 0.3s ease;
 }
 
-.scale-link .arrow {
-    transition: transform 0.3s ease;
-    display: inline-block;
+/* Original Arrow (Right) */
+.scale-link .btn-arrow-icon {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
 }
 
-.scale-link:hover .arrow {
-    transform: translateX(5px);
+/* Injected Left Arrow (Absolute to prevent layout shift) */
+.scale-link .arrow-left {
+    position: absolute;
+    left: 0;
+    /* top: 50%; */
+    /* transform: translate(-150%, -50%); */
+    transform: translateX(-150%);
+    opacity: 0;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+    color: var(--accent-gold);
+}
+
+.scale-link:hover {
+    color: var(--accent-gold);
+}
+
+.scale-link:hover .btn-arrow-icon {
+    transform: translateX(150%);
+    opacity: 0;
+}
+
+.scale-link:hover .arrow-left {
+    /* transform: translate(0, -50%); */
+    transform: translateX(0);
+    opacity: 1;
 }
 
 
