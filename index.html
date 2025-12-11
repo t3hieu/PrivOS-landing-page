@@ -27,56 +27,57 @@
         <img src="img/Privos Logo.svg" alt="PrivOS Logo" class="header-logo">
         <a href="#request-demo" class="header-cta">Request a Demo <img src="img/arrow.svg" alt=""
                 class="btn-arrow-icon"></a>
+    </div>
 
-        <!-- Dropdown Menu -->
-        <div class="header-menu">
-            <a href="#" class="menu-item">
-                <div class="menu-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="12" y1="19" x2="12" y2="5"></line>
-                        <polyline points="5 12 12 5 19 12"></polyline>
-                    </svg>
-                </div>
-                <span>Top of page</span>
-            </a>
-            <a href="#human-ai" class="menu-item">
-                <div class="menu-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M6 3L2 9L12 21L22 9L18 3H6Z"></path>
-                        <path d="M12 21L7.5 9H16.5L12 21Z"></path>
-                    </svg>
-                </div>
-                <span>Core Value</span>
-            </a>
-            <a href="#ecosystem" class="menu-item">
-                <div class="menu-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="3"></circle>
-                        <path
-                            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z">
-                        </path>
-                    </svg>
-                </div>
-                <span>How It Works</span>
-            </a>
-            <a href="#scale" class="menu-item">
-                <div class="menu-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                    </svg>
-                </div>
-                <span>Audience Segmentation</span>
-            </a>
-            <a href="#security" class="menu-item">
-                <div class="menu-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                    </svg>
-                </div>
-                <span>Enterprise Security</span>
-            </a>
-        </div>
+    <!-- Dropdown Menu (Moved outside to fix backdrop-filter nesting) -->
+    <div class="header-menu">
+        <a href="#" class="menu-item">
+            <div class="menu-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="12" y1="19" x2="12" y2="5"></line>
+                    <polyline points="5 12 12 5 19 12"></polyline>
+                </svg>
+            </div>
+            <span>Top of page</span>
+        </a>
+        <a href="#human-ai" class="menu-item">
+            <div class="menu-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 3L2 9L12 21L22 9L18 3H6Z"></path>
+                    <path d="M12 21L7.5 9H16.5L12 21Z"></path>
+                </svg>
+            </div>
+            <span>Core Value</span>
+        </a>
+        <a href="#ecosystem" class="menu-item">
+            <div class="menu-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path
+                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z">
+                    </path>
+                </svg>
+            </div>
+            <span>How It Works</span>
+        </a>
+        <a href="#scale" class="menu-item">
+            <div class="menu-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+            </div>
+            <span>Why PrivOS?</span>
+        </a>
+        <a href="#security" class="menu-item">
+            <div class="menu-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+            </div>
+            <span>Enterprise Security</span>
+        </a>
+    </div>
     </div>
 
 
@@ -91,10 +92,10 @@
             <div class="hero-content">
                 <h1 class="hero-title fade-in-up">
                     The Intuitive Virtual Workspace<br>
-                    Where Teams & AI Agents Collaborate
+                    Where Teams & Ai Agents Collaborate
                 </h1>
                 <p class="hero-subtitle fade-in-up delay-100">
-                    Transform your team’s productivity. PrivOS unifies human expertise and AI intelligence in a<br>
+                    Transform your team’s productivity. PrivOS unifies human expertise and Ai intelligence in a<br>
                     single, secure environment—powered by the robustness of Google Cloud.
                 </p>
                 <div class="hero-buttons fade-in-up delay-200">
@@ -121,7 +122,7 @@
             </h2>
             <p class="section-description fade-in-up delay-200">
                 Stop toggling between disjointed tools. PrivOS is a complete Operating<br>
-                System for your organization where AI Agents are treated as full team<br>
+                System for your organization where Ai Agents are treated as full team<br>
                 members.
             </p>
             <div class="feature-grid-dark">
@@ -184,21 +185,31 @@
                 <div class="ecosystem-card-dark fade-in-up delay-100">
                     <div class="card-label-gray">For Teams & Businesses</div>
                     <h3 class="card-title-large">The Workspace</h3>
-                    <div class="card-subtitle-gray">Hire Your AI Workforce.</div>
+                    <div class="card-subtitle-gray">Hire Your Ai Workforce.</div>
 
                     <p class="card-desc-text">
-                        Don't just use AI work with it. In the PrivOS Workspace, you can assign tasks to AI agents just
+                        Don't just use Ai work with it. In the PrivOS Workspace, you can assign tasks to Ai agents just
                         like you would a human employee. From marketing research to data analysis, get extraordinary
                         results in a fraction of the time.
                     </p>
 
                     <div class="card-highlight-box">
-                        <div class="highlight-header-row">
-                            <img src="img/Feature Highlight.svg" alt="Highlight" class="icon-small">
-                            <div class="highlight-title">Feature Highlight</div>
+                        <div class="feature-list-item">
+                            <img src="img/Your favorite chat app.svg" alt="Chat" class="feature-list-icon">
+                            <span class="feature-list-text">Your favorite chat app</span>
                         </div>
-                        <p class="highlight-desc">Ready-to-use infrastructure. We handle the heavy lifting of GPU
-                            management and cloud security so you can focus on results.</p>
+                        <div class="feature-list-item">
+                            <img src="img/Task & Smart List.svg" alt="Tasks" class="feature-list-icon">
+                            <span class="feature-list-text">Task & Smart List</span>
+                        </div>
+                        <div class="feature-list-item">
+                            <img src="img/Working Canva.svg" alt="Canvas" class="feature-list-icon">
+                            <span class="feature-list-text">Working Canva</span>
+                        </div>
+                        <div class="powered-by-badge">
+                            <img src="img/privos icon.svg" alt="PrivOS" class="powered-icon">
+                            <span class="powered-text">Powered by <strong>PrivOS Ai</strong></span>
+                        </div>
                     </div>
                 </div>
 
@@ -227,7 +238,7 @@
                             <img src="img/Package your expertise.svg" alt="Package" class="icon-small">
                             <div class="highlight-title">Package your expertise</div>
                         </div>
-                        <p class="highlight-desc">Turn your consulting methodologies into deployable AI assets
+                        <p class="highlight-desc">Turn your consulting methodologies into deployable Ai assets
                             available instantly to PrivOS users.</p>
                     </div>
                 </div>
@@ -341,7 +352,7 @@
                     </div>
 
                     <p class="security-desc">
-                        We understand that allowing AI into your internal workflow requires absolute trust.
+                        We understand that allowing Ai into your internal workflow requires absolute trust.
                         PrivOS is built on top of Google Cloud's world-class infrastructure, ensuring your
                         data
                         remains yours.
@@ -435,7 +446,7 @@
                 <div class="usecase-wide-content">
                     <div class="usecase-wide-text">
                         <h3 class="usecase-card-title">The Startup</h3>
-                        <p class="usecase-card-desc wide-desc">Uses a hybrid team of 3 humans and 35 AI Agents to run
+                        <p class="usecase-card-desc wide-desc">Uses a hybrid team of 3 humans and 35 Ai Agents to run
                             customer
                             support 24/7 without managing any servers.</p>
                     </div>
@@ -458,7 +469,7 @@
                         <h3 class="footer-heading">Ready to Orchestrate Your<br>AI Workforce?</h3>
                         <p class="footer-desc">
                             Join the companies transforming their productivity with PrivOS. Whether you are
-                            looking for a secure workspace or to monetize your AI expertise, we have the platform for
+                            looking for a secure workspace or to monetize your Ai expertise, we have the platform for
                             you.
                         </p>
                         <a href="#book-call" class="btn-primary">Book a Discovery Call <img src="img/arrow.svg" alt=""

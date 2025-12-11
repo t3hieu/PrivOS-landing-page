@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.usecase-card, .usecase-card-wide');
+    const cards = document.querySelectorAll('.usecase-card, .usecase-card-wide, .ecosystem-card-dark');
 
     cards.forEach(card => {
         card.addEventListener('mousemove', (e) => {
