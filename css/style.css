@@ -1035,6 +1035,14 @@ body {
     padding: 0 1.5rem;
 }
 
+.usecase-card-subtitle {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--primary-200);
+    margin: 0 0 0.5rem 0;
+    padding: 0 1.5rem;
+}
+
 .usecase-card-desc {
     width: 80%;
     font-size: 0.875rem;
@@ -1843,7 +1851,7 @@ body {
     }
 
     .usecase-card-wide {
-        height: 400px;
+        height: 420px;
     }
 
     .usecase-wide-content {
