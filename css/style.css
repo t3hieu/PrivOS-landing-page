@@ -1785,6 +1785,16 @@ body {
     opacity: 1;
 }
 
+.usecase-card-subtitle {
+    text-align: center;
+    margin-top: 3rem;
+    color: var(--primary-200);
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    width: 100%;
+    font-size: 20px;
+}
+
 
 
 /* Column 3: Brand */
