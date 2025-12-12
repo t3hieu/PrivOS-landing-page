@@ -375,7 +375,7 @@ body {
 .hero-content {
     text-align: center;
     max-width: 800px;
-    margin: 120px auto 120px;
+    margin: 120px auto 60px;
 }
 
 .hero-title {
@@ -396,12 +396,7 @@ body {
     padding: 0 1rem;
 }
 
-.hero-dashboard-img {
-    width: 100%;
-    height: auto;
-    display: block;
-
-}
+/* .hero-dashboard-img Removed */
 
 /* ===== Human + AI Section ===== */
 .human-ai-section {
@@ -2046,4 +2041,283 @@ body {
 
 .delay-300 {
     transition-delay: 0.3s;
+}
+
+/* ===== Card Fan-Out Section ===== */
+/* .card-fanout-section Removed */
+
+.fanout-container {
+    position: relative;
+    width: 900px;
+    height: 600px;
+    margin: 0 auto;
+    perspective: 1000px;
+}
+
+.fanout-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    height: 400px;
+    transform-origin: center bottom;
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.fanout-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Card 1 - Center */
+.fanout-card[data-card="1"] {
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+/* Default State: Mini-Fan (Cards slightly visible) */
+.fanout-card[data-card="2"] {
+    transform: translate(calc(-50% - 60px), calc(-50% - 20px)) rotate(-10deg) scale(0.95);
+    opacity: 1;
+    /* Always visible */
+    pointer-events: auto;
+    /* Clickable */
+    z-index: 4;
+}
+
+.fanout-card[data-card="3"] {
+    transform: translate(calc(-50% - 30px), calc(-50% - 10px)) rotate(-5deg) scale(0.98);
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 4;
+    /* Behind card 1 but same level as others initially? No, should be layered */
+    z-index: 3;
+}
+
+/* Wait, natural stacking order usually: 2(left-most or bottom) ... 1(top) ... 5(right-most) */
+/* Let's adjust z-indexes for a natural deck feel */
+.fanout-card[data-card="1"] {
+    z-index: 10;
+}
+
+.fanout-card[data-card="2"] {
+    z-index: 9;
+}
+
+/* Left outer */
+.fanout-card[data-card="3"] {
+    z-index: 8;
+}
+
+/* Left inner */
+.fanout-card[data-card="4"] {
+    z-index: 8;
+}
+
+/* Right inner */
+.fanout-card[data-card="5"] {
+    z-index: 9;
+}
+
+/* Right outer */
+
+/* Let's redefine default transforms with better layering logic */
+/* Card 2 (Far Left) */
+.fanout-card[data-card="2"] {
+    transform: translate(calc(-50% - 60px), calc(-50% + 10px)) rotate(-10deg) scale(0.95);
+    z-index: 6;
+}
+
+/* Card 3 (Near Left) */
+.fanout-card[data-card="3"] {
+    transform: translate(calc(-50% - 30px), calc(-50% + 5px)) rotate(-5deg) scale(0.98);
+    z-index: 7;
+}
+
+/* Card 4 (Near Right) */
+.fanout-card[data-card="4"] {
+    transform: translate(calc(-50% + 30px), calc(-50% + 5px)) rotate(5deg) scale(0.98);
+    z-index: 7;
+}
+
+/* Card 5 (Far Right) */
+.fanout-card[data-card="5"] {
+    transform: translate(calc(-50% + 60px), calc(-50% + 10px)) rotate(10deg) scale(0.95);
+    z-index: 6;
+}
+
+
+/* HOVER STATE: Full Fan-Out (Triggered by Container) */
+.fanout-container:hover .fanout-card[data-card="2"] {
+    transform: translate(calc(-50% - 240px), calc(-50% - 20px)) rotate(-30deg) scale(1);
+    z-index: 9;
+    transition-delay: 0s;
+}
+
+.fanout-container:hover .fanout-card[data-card="3"] {
+    transform: translate(calc(-50% - 120px), calc(-50% - 40px)) rotate(-15deg) scale(1);
+    z-index: 10;
+    /* Bring forward */
+    transition-delay: 0.05s;
+}
+
+.fanout-container:hover .fanout-card[data-card="4"] {
+    transform: translate(calc(-50% + 120px), calc(-50% - 40px)) rotate(15deg) scale(1);
+    z-index: 10;
+    transition-delay: 0.05s;
+}
+
+.fanout-container:hover .fanout-card[data-card="5"] {
+    transform: translate(calc(-50% + 240px), calc(-50% - 20px)) rotate(30deg) scale(1);
+    z-index: 9;
+    transition-delay: 0s;
+}
+
+/* Card 1 pops up a bit on hover too? */
+.fanout-container:hover .fanout-card[data-card="1"] {
+    transform: translate(-50%, -80px) scale(1.05);
+    /* Slight lift */
+    z-index: 11;
+}
+
+
+/* Individual Card Hover (Zoom & Bring to Front) */
+.fanout-container:hover .fanout-card:hover {
+    transform: translate(var(--hover-x), var(--hover-y)) rotate(var(--hover-rotate)) scale(1.2) !important;
+    z-index: 100 !important;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* Snappy */
+}
+
+/* Need to define hover variables since we removed the specific sibling selectors */
+/* We can use specific selectors for hover state persistence */
+.fanout-container:hover .fanout-card[data-card="1"]:hover {
+    --hover-x: -50%;
+    --hover-y: -80px;
+    --hover-rotate: 0deg;
+}
+
+.fanout-container:hover .fanout-card[data-card="2"]:hover {
+    --hover-x: calc(-50% - 240px);
+    --hover-y: calc(-50% - 60px);
+    /* Lift up */
+    --hover-rotate: -30deg;
+}
+
+.fanout-container:hover .fanout-card[data-card="3"]:hover {
+    --hover-x: calc(-50% - 120px);
+    --hover-y: calc(-50% - 80px);
+    --hover-rotate: -15deg;
+}
+
+.fanout-container:hover .fanout-card[data-card="4"]:hover {
+    --hover-x: calc(-50% + 120px);
+    --hover-y: calc(-50% - 80px);
+    --hover-rotate: 15deg;
+}
+
+.fanout-container:hover .fanout-card[data-card="5"]:hover {
+    --hover-x: calc(-50% + 240px);
+    --hover-y: calc(-50% - 60px);
+    --hover-rotate: 30deg;
+}
+
+/* ===== Mobile Layout for Cards (Vertical Stack) ===== */
+@media (max-width: 768px) {
+    .fanout-container {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 40px;
+        perspective: none;
+    }
+
+    .fanout-card {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none !important;
+        width: 100%;
+        height: auto;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        margin-bottom: -100px;
+        box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.5);
+
+        /* Default Dimmed State */
+        filter: brightness(0.4);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.4s ease;
+    }
+
+    .fanout-card img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+    }
+
+    /* Last card needs normal margin */
+    .fanout-card:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Reset specific card transforms */
+    .fanout-card[data-card="1"],
+    .fanout-card[data-card="2"],
+    .fanout-card[data-card="3"],
+    .fanout-card[data-card="4"],
+    .fanout-card[data-card="5"] {
+        transform: none !important;
+    }
+
+    /* Layering (Top card first) */
+    .fanout-card[data-card="1"] {
+        z-index: 5;
+    }
+
+    .fanout-card[data-card="2"] {
+        z-index: 4;
+    }
+
+    .fanout-card[data-card="3"] {
+        z-index: 3;
+    }
+
+    .fanout-card[data-card="4"] {
+        z-index: 2;
+    }
+
+    .fanout-card[data-card="5"] {
+        z-index: 1;
+    }
+
+    /* Disable Hover Effects on Mobile */
+    .fanout-container:hover .fanout-card {
+        transform: none !important;
+    }
+
+    .fanout-container:hover .fanout-card:hover {
+        transform: translateY(-20px) !important;
+        z-index: 10 !important;
+        scale: 1 !important;
+        filter: brightness(1) !important;
+    }
+
+    /* Active State on Scroll (JS triggered) */
+    .fanout-card.mobile-active {
+        transform: scale(1.05) translateY(-20px) !important;
+        z-index: 100 !important;
+        box-shadow: 0 0 40px rgba(255, 209, 60, 0.3), 0 -10px 30px rgba(0, 0, 0, 0.5) !important;
+        filter: brightness(1) !important;
+    }
 }
